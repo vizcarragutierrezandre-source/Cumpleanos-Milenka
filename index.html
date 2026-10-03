@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#05020c"
+    >
+
+    <title>
+        Para Milenka ❤️
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="./style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     MÚSICA
+================================================== -->
+
+<audio
+    id="backgroundMusic"
+    loop
+>
+
+    <source
+        src="./musica/musica.mp3"
+        type="audio/mpeg"
+    >
+
+</audio>
+
+
+
+<!-- ==================================================
+     CAPA DE PARTÍCULAS GLOBAL
+================================================== -->
+
+<div id="cursorGlow"></div>
+
+<div id="globalParticles"></div>
+
+
+
+<!-- ==================================================
+     INTRO
+================================================== -->
+
+<section
+    id="intro"
+    class="scene"
+>
+
+    <div class="intro-stars"></div>
+
+    <div class="intro-content">
+
+        <div class="mini-label">
+            UNA PEQUEÑA SORPRESA
+        </div>
+
+        <div class="intro-symbol">
+            ✦
+        </div>
+
+        <h1>
+            Milenka
+        </h1>
+
+        <p>
+            Hay regalos que se pueden envolver...
+        </p>
+
+        <p class="intro-highlight">
+            y otros que se tienen que vivir.
+        </p>
+
+        <button id="openButton">
+            🎁 ABRIR MI REGALO
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     CUMPLEAÑOS
+================================================== -->
+
+<section
+    id="birthday"
+    class="scene hidden"
+>
+
+    <div class="cinematic-content">
+
+        <div class="date">
+            06 • OCTUBRE • 2026
+        </div>
+
+        <div class="birthday-orb">
+            ✨
+        </div>
+
+        <h1>
+            Feliz cumpleaños
+        </h1>
+
+        <h2>
+            Milenka Brigitte Luck Alva
+        </h2>
+
+        <p>
+            Hoy no quería simplemente decirte
+            "feliz cumpleaños".
+        </p>
+
+        <p class="highlight">
+            Quería crear algo que pudieras recordar.
+        </p>
+
+        <button id="continueButton">
+            COMENZAR ✨
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     FOTOS
+================================================== -->
+
+<section
+    id="memories"
+    class="scene hidden"
+>
+
+    <div class="memory-layout">
+
+        <div class="section-label">
+            CAPÍTULO I
+        </div>
+
+        <h2>
+            Momentos que merecen quedarse
+        </h2>
+
+        <div class="photo-frame">
+
+            <div class="frame-glow"></div>
+
+            <img
+                id="memoryImage"
+                src="./fotos/foto1.jpeg"
+                alt="Recuerdo"
+            >
+
+        </div>
+
+        <div class="memory-counter">
+
+            <span id="memoryNumber">
+                01
+            </span>
+
+            <span>
+                / 06
+            </span>
+
+        </div>
+
+        <div
+            id="memoryCaption"
+            class="memory-caption"
+        >
+            Un momento para guardar.
+        </div>
+
+        <button id="nextMemoryButton">
+            SIGUIENTE ❤️
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     VIDEOS
+================================================== -->
+
+<section
+    id="videosScene"
+    class="scene hidden"
+>
+
+    <div class="video-layout">
+
+        <div class="section-label">
+            CAPÍTULO II
+        </div>
+
+        <h2>
+            Los momentos también cuentan historias
+        </h2>
+
+        <div class="video-frame">
+
+            <video
+                id="memoryVideo"
+                controls
+                playsinline
+                preload="metadata"
+            >
+
+                <source
+                    id="videoSource"
+                    src="./videos/video1.mp4"
+                    type="video/mp4"
+                >
+
+            </video>
+
+        </div>
+
+        <div
+            id="videoNumber"
+            class="video-number"
+        >
+            MOMENTO 01 / 03
+        </div>
+
+        <button id="nextVideoButton">
+            SIGUIENTE 🎬
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     CARTA
+================================================== -->
+
+<section
+    id="letterScene"
+    class="scene hidden"
+>
+
+    <div class="letter-layout">
+
+        <div class="section-label">
+            CAPÍTULO III
+        </div>
+
+        <div class="envelope">
+            💌
+        </div>
+
+        <h1>
+            Una carta para ti
+        </h1>
+
+        <div class="letter-paper">
+
+            <p>
+                Hoy quiero desearte algo más que
+                un simple cumpleaños feliz.
+            </p>
+
+            <p>
+                Quiero que este nuevo año de tu vida
+                esté lleno de momentos que te hagan
+                sonreír, sueños que comiencen a hacerse
+                realidad y personas que sepan valorar
+                la persona que eres.
+            </p>
+
+            <p>
+                Sé que tienes sueños, metas y un camino
+                que seguir. Y espero que nunca pierdas
+                esa ilusión por llegar cada vez más lejos.
+            </p>
+
+            <p>
+                Elegiste una profesión en la que
+                cuidar de otras personas será parte
+                de tu historia.
+            </p>
+
+            <p class="doctor-line">
+                🩺 Que nunca olvides cuidar también
+                de tus propios sueños.
+            </p>
+
+            <p>
+                Hoy solamente quiero que disfrutes,
+                sonrías y recuerdes que hay personas
+                felices de verte cumplir un año más.
+            </p>
+
+            <p class="signature">
+                Feliz cumpleaños, Milenka. ❤️
+            </p>
+
+        </div>
+
+        <button id="letterContinueButton">
+            HAY ALGO MÁS... ✨
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     GALAXIA
+================================================== -->
+
+<section
+    id="galaxyScene"
+    class="galaxy-scene hidden"
+>
+
+    <div id="galaxyIntro">
+
+        <div class="birth-star"></div>
+
+        <div class="birth-heart">
+            ❤️
+        </div>
+
+        <div class="birth-message">
+            Hay cosas que no caben en una carta...
+        </div>
+
+    </div>
+
+
+    <div id="stars"></div>
+
+    <div id="galaxyDust"></div>
+
+    <div id="galaxyFlashes"></div>
+
+    <div id="hearts"></div>
+
+    <div id="orbitHearts"></div>
+
+
+    <!-- CONSTELACIÓN -->
+
+    <div
+        id="constellation"
+        class="constellation"
+    >
+
+        <div class="constellation-line line1"></div>
+        <div class="constellation-line line2"></div>
+        <div class="constellation-line line3"></div>
+        <div class="constellation-line line4"></div>
+
+        <span class="constellation-star c1"></span>
+        <span class="constellation-star c2"></span>
+        <span class="constellation-star c3"></span>
+        <span class="constellation-star c4"></span>
+        <span class="constellation-star c5"></span>
+
+        <div class="constellation-name">
+            MILENKA
+        </div>
+
+    </div>
+
+
+    <!-- CENTRO -->
+
+    <div
+        id="galaxyCenter"
+        class="galaxy-center"
+    >
+
+        <div class="galaxy-ring ring1"></div>
+        <div class="galaxy-ring ring2"></div>
+        <div class="galaxy-ring ring3"></div>
+
+        <div class="central-heart">
+            ❤️
+        </div>
+
+        <div class="galaxy-label">
+            PARA TI
+        </div>
+
+        <h1>
+            Milenka
+        </h1>
+
+        <p>
+            Una pequeña galaxia creada
+            especialmente para celebrar tu existencia.
+        </p>
+
+    </div>
+
+
+    <!-- FRASES -->
+
+    <div class="galaxy-phrase">
+
+        <p id="galaxyMainPhrase">
+            Entre millones de personas,
+            qué bonito haber coincidido contigo. ❤️
+        </p>
+
+    </div>
+
+
+    <!-- BOTÓN -->
+
+    <button
+        id="galaxyContinueButton"
+        class="galaxy-button"
+    >
+        SEGUIR ✨
+    </button>
+
+</section>
+
+
+
+<!-- ==================================================
+     DETALLES
+================================================== -->
+
+<section
+    id="detailsScene"
+    class="scene hidden"
+>
+
+    <div class="details-layout">
+
+        <div class="section-label">
+            UN PEQUEÑO DETALLE
+        </div>
+
+        <h1>
+            Si pudiera guardar este día...
+        </h1>
+
+        <p class="details-intro">
+            guardaría estas cosas:
+        </p>
+
+
+        <div class="detail-cards">
+
+            <div class="detail-card">
+
+                <span>
+                    ✨
+                </span>
+
+                <h3>
+                    Tus sueños
+                </h3>
+
+                <p>
+                    Que nunca dejes de perseguir
+                    todo aquello que imaginas para
+                    tu futuro.
+                </p>
+
+            </div>
+
+
+            <div class="detail-card">
+
+                <span>
+                    🩺
+                </span>
+
+                <h3>
+                    Tu camino
+                </h3>
+
+                <p>
+                    Que cada paso de tu profesión
+                    te acerque a la persona que
+                    quieres llegar a ser.
+                </p>
+
+            </div>
+
+
+            <div class="detail-card">
+
+                <span>
+                    ❤️
+                </span>
+
+                <h3>
+                    Tus momentos
+                </h3>
+
+                <p>
+                    Que nunca te falten razones
+                    para recordar los días bonitos.
+                </p>
+
+            </div>
+
+
+            <div class="detail-card">
+
+                <span>
+                    🌙
+                </span>
+
+                <h3>
+                    Tus noches
+                </h3>
+
+                <p>
+                    Que incluso en los días difíciles
+                    siempre encuentres un motivo
+                    para seguir adelante.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <button id="detailsContinueButton">
+            UNA ÚLTIMA COSA ❤️
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     FINAL
+================================================== -->
+
+<section
+    id="finalScene"
+    class="final-scene hidden"
+>
+
+    <div id="finalStars"></div>
+
+    <div class="final-content">
+
+        <div class="final-symbol">
+            ✦
+        </div>
+
+        <div class="final-date">
+            06 • 10 • 2026
+        </div>
+
+        <h1>
+            Milenka
+        </h1>
+
+        <h2>
+            Feliz cumpleaños ❤️
+        </h2>
+
+        <div class="final-divider"></div>
+
+        <p id="finalTypewriter">
+        </p>
+
+        <div class="final-heart">
+            ❤️
+        </div>
+
+        <p class="final-small">
+            Que este nuevo capítulo de tu vida
+            esté lleno de cosas bonitas.
+        </p>
+
+        <button id="restartButton">
+            🔄 VOLVER A VIVIRLO
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     MÚSICA
+================================================== -->
+
+<button
+    id="musicButton"
+    class="music-button"
+>
+    🔊
+</button>
+
+
+
+<script
+    src="./script.js"
+></script>
+
+</body>
+
+</html>
